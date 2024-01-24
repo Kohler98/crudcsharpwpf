@@ -1,0 +1,14 @@
+﻿<Window x:Class="Conexion_Gestion_Pedidos.Actualiza"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Conexion_Gestion_Pedidos"
+        mc:Ignorable="d"
+        Title="Actualiza" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="nombreCliente" TextWrapping="Wrap" Text="Tu nombre" Margin="77,101,482,289" RenderTransformOrigin="0.495,0.511"/>
+        <Label Content="Nombre de cliente" Margin="77,73,482,338"/>
+        <Button Content="Actualizar" Margin="98,344,502,43" Click="Button_Click_3"/>
+    </Grid>
+</Window>

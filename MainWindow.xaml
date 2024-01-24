@@ -1,0 +1,60 @@
+﻿<Window x:Class="Conexion_Gestion_Pedidos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Conexion_Gestion_Pedidos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Cliente" IsEnabled="False" FontSize="22" Margin="131,23,589,371" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.185"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListBox Name="listaClientes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="81,90,491,203" MouseDoubleClick="listaClientes_MouseDoubleClick" />
+        <Label Content="Pedidos Clientes" IsEnabled="False" FontSize="22" Margin="572,23,59,371" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.185"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListBox Name="listaPedidos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="314,90,258,203"/>
+
+        <Label Content="Pedidos" IsEnabled="False" FontSize="22" Margin="351,25,362,369" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.185"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListBox Name="todosPedidos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="547,90,25,203"/>
+        <Button Content="Eliminar" Margin="620,273,93,112" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.796"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.986"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Insertar" Margin="101,274,618,113" Click="Button_Click_2"/>
+        <Button Content="Borrar" Margin="200,274,522,113" Click="Button_Click_1"/>
+        <TextBox Name="insertaCliente" TextWrapping="Wrap" Text="TextBox" Margin="114,338,500,48"/>
+        <Button Content="Actualizar" Margin="332,274,268,113" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>
